@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "4befd499-7d5d-41cf-a09e-bf9825dd8b38",
+		"name": "SpaceTraders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47074366",
+		"_collection_link": "https://camila-m-duarte-5704876.postman.co/workspace/Camila's-Workspace~4b532df9-702b-4ae8-8a7f-cbccf56d8ef3/collection/47074366-4befd499-7d5d-41cf-a09e-bf9825dd8b38?action=share&source=collection_link&creator=47074366"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiY21kajJ3ZnpwMDAwbXRtMTZxZWQ3eXUxZyIsInZlcnNpb24iOiJ2Mi4zLjAiLCJpYXQiOjE3NTM0NjQ2MjMsInN1YiI6ImFjY291bnQtdG9rZW4ifQ.w8hajSKNugvhOCQctdfupO0UB4gjyP5D-L0cLg1AwD6OnwkiUiAK_WJw7RySZo2oIeLF_MCYgaWfst1EoDgBUiQFaVnlM8FwA422z3FLAiKkBhogFNAkQjApF9G61V-bg1CGmaxOeo_MaouatMEzYrZgKYIk7EHfjDm5NleuzTZ9IpvNqSBALxVGDa_nE7F0hbUEbMtDunWUHzPbIORYUl-zNy9etXrxwiBVeuPSCRCRFQ2AtSGChDBcOj1vT7g26af6b74YbO3T6F1hIEyF_dwWCrZVWsGel-GzaHPKZuqo5smJ_g40I0Zs6l8BxZspPWrYmf3CjhWCeiKRFuhf_r2FG8jfKcdu1N-Zrbqre-JPCOiQrIePqKIOIAnWCnLTdRVfs69bHF4_qfru1oiDCUkwXq3jD1s8Fe_8LsHKp6hRLLcMjvpyF2jS1HmRkweXO1Goa93ccDRO6ZtjXO25obrp9BBxqdEKg40RCA5lDYAL0vYfs5bOYZWbpZ_l5B-lDiDXMdeAP--YTClyMG5YC0p5K8CUNSqQtDqdMULszCtcTzQxu1rSyk3zr1D-VF3xuxWiEV2pyKhHi62q7p97LB96DsTvdP_LaqlrJ304vj85JE0O3jwfvXjSH537cQed6QDbJa6lpf4x3cOVLzy4NmOGyOmM04sHJFeLsKtPtgo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"symbol\": \"Cami\",\r\n    \"faction\": \"COSMIC\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}register",
+					"host": [
+						"{{host}}register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MyAgentInfo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiQ0FNSSIsInZlcnNpb24iOiJ2Mi4zLjAiLCJyZXNldF9kYXRlIjoiMjAyNS0wNy0yMCIsImlhdCI6MTc1MzQ2NjkwMSwic3ViIjoiYWdlbnQtdG9rZW4ifQ.QfN_1G08yqVG1wzwauPBnEf9Ay1fWccKDw63o__MmC4WKjM4nq1nrUkenI3Y_fUoCyHduhSBPAkIAtrR0TYhduZqBPmeLhugH8Ise6NDT00JbX1BJjx3k6zhbxZZ39k8FS95ZpFNIYklyD__675bhok33Q9jtl0xpw2pMnRZ_MNWJABNuiNMvp-ulpnbCHATD0MRYYVhmbrj09tht7fe-w9hn9faWO3eQZK_KRZGVb5Gyc5j38QEsMtqvPkNahvBNUtWa5sZQ1El1aRSutkhwjK937ponBOdNy1maQZ3RBPzun7kcfkJ2PsMv4u6Bs37rebIqyKgkaL8X6Et90rpQn7TUssvnfL2bJyGH7z7z2NmC2vqa5kviBGm82TJJBahpAIc9drbXMthdGGJ-o3FDs8qDWb5Su36nMaio4rkqhUqh1FLNXYTfH2r2H-PCyy7lC5EZYpOPoKYjElUyzYxvNbuNYIHi2tE-eusEhYfznDj_Asb0GRFCWwN2fPnOdQlYHkF51Wn_3quFklaagpDGnhX6RNllSoJAbB5gS_riODVQ1re5TC6gFTHcnsiCHC9bm4Efk4yHytVVsYwsDw80Bi-rP8RyFIP528xsDfu55fcWilbFVtRueEkk31eh7QQXgMwrinyoeY5HeUvmpQd1CPL1ji9A-lK4q9HJO5I-HI",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"symbol\": \"Cami\",\r\n    \"faction\": \"COSMIC\"\r\n}"
+				},
+				"url": {
+					"raw": "{{host}}my/agent",
+					"host": [
+						"{{host}}my"
+					],
+					"path": [
+						"agent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{Authorization}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}my/contracts",
+					"host": [
+						"{{host}}my"
+					],
+					"path": [
+						"contracts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "https://api.spacetraders.io/v2/",
+			"type": "string"
+		}
+	]
+}
